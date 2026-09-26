@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #201e1e;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #5e376d;
+  outline-offset: 4px;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 16px 40px;
+}
+
+.player {
+  width: 294px;
+  max-width: 100%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 65px;
+  background: #d2bbdc;
+  box-shadow:
+    inset 14px 0 20px #ffffff65,
+    inset -14px 0 20px #ffffff65;
+}
+
+.player-header {
+  height: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #ffffff80;
+  color: #5e376d;
+  font-size: 12px;
+  text-align: center;
+}
+
+.track-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.track {
+  width: 180px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffffff80;
+  color: #5e376d;
+  font-size: 12px;
+  text-align: left;
+}
+
+.track:hover {
+  background: #ffffffb3;
+}
+
+.track-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #888;
+  color: white;
+  font-size: 10px;
+}
+
+.controller {
+  height: 83px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #ffffff80;
+}
+
+.controller button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #8c8292;
+  font-size: 24px;
+}
+
+.controller .main-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #aaa0af;
+  color: white;
+}
+
+.controller button:hover {
+  filter: brightness(0.85);
+}
+
+footer {
+  margin-top: 70px;
+  color: #f5f5dc;
+  font-size: 13px;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:focus-visible {
+  outline-color: #f5f5dc;
+}
